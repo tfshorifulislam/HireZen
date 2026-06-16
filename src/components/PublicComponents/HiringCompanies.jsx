@@ -2,7 +2,6 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';
 
 const HiringCompanies = () => {
-    // Cleaned up duplicates, fixed typos (Netflex -> Netflix), and normalized casing
     const companies = [
         'DoorDash',
         'Amazon',
