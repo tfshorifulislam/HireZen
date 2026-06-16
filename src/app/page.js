@@ -1,3 +1,4 @@
+import Automatejob from '@/components/PublicComponents/Automatejob';
 import Banner from '@/components/PublicComponents/Banner';
 import HiringCompanies from '@/components/PublicComponents/HiringCompanies';
 import LoginSignupButton from '@/components/PublicComponents/LoginSignupButton';
@@ -11,6 +12,7 @@ const PublicHomePage = () => {
       <LoginSignupButton />
       <Banner />
       <HiringCompanies />
+      <Automatejob />
     </div>
   );
 };
