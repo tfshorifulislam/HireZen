@@ -3,7 +3,7 @@ import React from 'react';
 
 const LoginSignupButton = () => {
     return (
-        <div className='bg-[#004f6e] w-full px-4 py-3 md:py-2 flex flex-col gap-4 md:flex-row md:justify-between md:items-center mt-3'>
+        <div className='bg-[#004f6e] w-full px-4 py-3 md:py-2 flex flex-col gap-4 md:flex-row md:justify-between md:items-center sm:mt-3'>
             
            
             <div className='flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm text-white/90 font-medium text-center md:justify-start'>
