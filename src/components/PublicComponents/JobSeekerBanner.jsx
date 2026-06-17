@@ -25,36 +25,27 @@ const JobSeekerBanner = () => {
                     <rect width="100%" height="100%" fill="url(#doodle-pattern)" />
                 </svg>
             </div>
-
-         
             <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
-                
-             
                 <div className="mb-4 text-[#ffb100] animate-pulse">
                     <svg className="w-10 h-10 md:w-12 md:h-12 mx-auto" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8z" />
                         <path d="M19 13l1 2 2 .3-1.5 1.4.4 2-1.9-1-1.9 1 .4-2-1.5-1.4 2-.3z" className="opacity-80" />
                     </svg>
                 </div>
-
-             
                 <h2 className="text-2xl sm:text-3xl md:text-4.5xl font-bold tracking-tight text-white leading-tight max-w-3xl mb-8">
                     Over{' '}
                     <span className="relative inline-block px-1">
                         1 Million
-                     
+
                         <svg className="absolute left-0 -bottom-2 w-full h-2 text-[#ff5429]" viewBox="0 0 100 10" preserveAspectRatio="none">
                             <path d="M0,5 Q50,10 100,5" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" />
                         </svg>
                     </span>{' '}
                     Job Seekers Have Used <span className="text-white">HireZen</span> to Find a Better Way to Work
                 </h2>
-
-           
                 <button className="bg-[#ff5429] hover:bg-[#e0431b] text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-md shadow-md hover:shadow-lg active:scale-98 transition-all duration-200 cursor-pointer">
                     Find Your Next Remote Job!
                 </button>
-
             </div>
         </section>
     );
