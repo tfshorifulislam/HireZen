@@ -3,6 +3,7 @@ import Banner from '@/components/PublicComponents/Banner';
 import FeaturingJobs from '@/components/PublicComponents/FeaturingJobs';
 import PublicFooter from '@/components/PublicComponents/Footer';
 import HiringCompanies from '@/components/PublicComponents/HiringCompanies';
+import JobSeekerBanner from '@/components/PublicComponents/JobSeekerBanner';
 import LoginSignupButton from '@/components/PublicComponents/LoginSignupButton';
 import PublicNavbar from '@/components/PublicComponents/Navbar';
 import React from 'react';
@@ -16,6 +17,7 @@ const PublicHomePage = () => {
       <HiringCompanies />
       <Automatejob />
       <FeaturingJobs />
+      <JobSeekerBanner/>
       <PublicFooter />
     </div>
   );
