@@ -27,7 +27,6 @@ const LoginSignupButton = () => {
                    <Link href={'/signup'}> Sign Up </Link>
                 </Button>
             </div>
-
         </div>
     );
 };
