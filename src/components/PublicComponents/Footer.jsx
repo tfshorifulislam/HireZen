@@ -44,7 +44,7 @@ const PublicFooter = () => {
     return (
         <footer className="w-11/12 mx-auto  text-gray-700 border-t border-gray-200 mt-16 py-12 md:py-16">
             
-            <div className="w-11/12 max-w-5xl mx-auto flex flex-col sm:flex-row sm:gap-10 md:gap-12 space-y-10 text-left justify-center">
+            <div className="flex flex-col sm:flex-row sm:gap-10 md:gap-12 space-y-10 text-left justify-center">
                 
                 {/* Column 1 */}
                 <div className="flex flex-col space-y-3">
