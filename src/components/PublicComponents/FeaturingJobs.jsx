@@ -64,7 +64,7 @@ const FeaturingJobs = () => {
     };
 
     return (
-        <section className="w-11/12 mx-auto py-12 md:py-16 overflow-hidden">
+        <section className="max-w-7xl w-11/12 mx-auto py-12 md:py-16 overflow-hidden">
             {/* Header */}
             <div className="text-center mb-10 md:mb-12">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#004f6e] tracking-tight">
