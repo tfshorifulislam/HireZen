@@ -12,15 +12,12 @@ import React from 'react';
 const PublicHomePage = () => {
   return (
     <div>
-      <PublicNavbar />
-      <LoginSignupButton />
       <Banner />
       <HiringCompanies />
       <Automatejob />
       <FeaturingJobs />
       <HowDifferentHireZen/>
       <JobSeekerBanner/>
-      <PublicFooter />
     </div>
   );
 };

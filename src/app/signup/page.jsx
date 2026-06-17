@@ -20,55 +20,55 @@ export default function SignupPage() {
 
     const handleSignup = async (e) => {
         e.preventDefault();
-        
-            console.log("Form Submitted Successfully! Data Received:", {
-        firstName,
-        lastName,
-        fullName: `${firstName} ${lastName}`.trim(),
-        email,
-        confirmEmail,
-        password,
-        role 
-    });
 
-    if (email !== confirmEmail) {
-        setError("Emails do not match!");
-        return;
-    }
-
-    setError("");
-    setSuccess("");
-    setIsLoading(true);
-
-    try {
-        const { data, error: authError } = await signUp.email({
+        console.log("Form Submitted Successfully! Data Received:", {
+            firstName,
+            lastName,
+            fullName: `${firstName} ${lastName}`.trim(),
             email,
+            confirmEmail,
             password,
-            name: `${firstName} ${lastName}`.trim(),
-            role,
-            callbackURL: "/",
+            role
         });
 
-        if (authError) {
-            setError(authError.message || "Something went wrong during signup.");
-        } else {
-            setSuccess("Account created successfully! Welcome.");
-            setFirstName("");
-            setLastName("");
-            setEmail("");
-            setConfirmEmail("");
-            setPassword("");
+        if (email !== confirmEmail) {
+            setError("Emails do not match!");
+            return;
         }
-    } catch (err) {
-        setError("An unexpected network error occurred.");
-    } finally {
-        setIsLoading(false);
-    }
-};
+
+        setError("");
+        setSuccess("");
+        setIsLoading(true);
+
+        try {
+            const { data, error: authError } = await signUp.email({
+                email,
+                password,
+                name: `${firstName} ${lastName}`.trim(),
+                role,
+                callbackURL: "/",
+            });
+
+            if (authError) {
+                setError(authError.message || "Something went wrong during signup.");
+            } else {
+                setSuccess("Account created successfully! Welcome.");
+                setFirstName("");
+                setLastName("");
+                setEmail("");
+                setConfirmEmail("");
+                setPassword("");
+            }
+        } catch (err) {
+            setError(`${err}`);
+        } finally {
+            setIsLoading(false);
+        }
+    };
 
     return (
         <div className="max-w-6xl mx-auto px-4 py-8 md:py-12 font-sans text-slate-700">
-          
+
             <header className="mb-8 text-center md:text-left">
                 <h1 className="text-2xl md:text-3xl font-semibold text-[#11698e] leading-tight mb-3">
                     Discover a faster, safer, and easier way to find the best remote and flexible jobs!
@@ -87,7 +87,7 @@ export default function SignupPage() {
 
             {/* Main Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 items-start">
-                
+
                 {/* Signup Form */}
                 <div className="lg:col-span-2 bg-[#f4f4f6] border border-slate-200 rounded-2xl p-5 md:p-8 lg:p-10">
                     <div className="flex items-center justify-center gap-3 mb-8">
@@ -98,8 +98,8 @@ export default function SignupPage() {
                     </div>
 
                     <form onSubmit={handleSignup} className="space-y-6 max-w-2xl mx-auto">
-                        
-                       
+
+
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="flex flex-col gap-1.5">
                                 <label className="text-sm font-semibold text-slate-700">
@@ -130,7 +130,7 @@ export default function SignupPage() {
                             </div>
                         </div>
 
-                      
+
                         <div className="flex flex-col gap-1.5">
                             <label className="text-sm font-semibold text-slate-700">
                                 Email Address <span className="text-red-500">*</span>
@@ -186,14 +186,14 @@ export default function SignupPage() {
                             <label className="text-sm font-semibold text-slate-700">
                                 I want to join as <span className="text-red-500">*</span>
                             </label>
-                            
+
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <button
                                     type="button"
                                     onClick={() => setRole("seeker")}
                                     className={`p-5 rounded-2xl border-2 transition-all duration-200 flex flex-col items-center text-center
-                                        ${role === "seeker" 
-                                            ? "border-[#11698e] bg-[#11698e]/5 shadow-sm" 
+                                        ${role === "seeker"
+                                            ? "border-[#11698e] bg-[#11698e]/5 shadow-sm"
                                             : "border-slate-200 hover:border-slate-300"}`}
                                 >
                                     <div className="text-4xl mb-3">🔍</div>
@@ -205,8 +205,8 @@ export default function SignupPage() {
                                     type="button"
                                     onClick={() => setRole("recruiter")}
                                     className={`p-5 rounded-2xl border-2 transition-all duration-200 flex flex-col items-center text-center
-                                        ${role === "recruiter" 
-                                            ? "border-[#11698e] bg-[#11698e]/5 shadow-sm" 
+                                        ${role === "recruiter"
+                                            ? "border-[#11698e] bg-[#11698e]/5 shadow-sm"
                                             : "border-slate-200 hover:border-slate-300"}`}
                                 >
                                     <div className="text-4xl mb-3">🏢</div>

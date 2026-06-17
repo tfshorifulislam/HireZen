@@ -1,4 +1,5 @@
 import { Button } from '@heroui/react';
+import Link from 'next/link';
 import React from 'react';
 
 const LoginSignupButton = () => {
@@ -18,12 +19,12 @@ const LoginSignupButton = () => {
                     className='text-white hover:bg-white/10 rounded-sm flex-1 md:flex-none min-w-20' 
                     variant='light'
                 >
-                    Log In
+                  <Link href={'/signin'}> Log In </Link>
                 </Button>
                 <Button 
                     className='text-white bg-[#ff5429] rounded-sm font-medium flex-1 md:flex-none min-w-22 shadow-sm hover:bg-[#e04822] transition-colors'
                 >
-                    Sign Up
+                   <Link href={'/signup'}> Sign Up </Link>
                 </Button>
             </div>
 

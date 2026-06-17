@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PublicNavbar from "@/components/PublicComponents/Navbar";
+import LoginSignupButton from "@/components/PublicComponents/LoginSignupButton";
+import PublicFooter from "@/components/PublicComponents/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "HireZen", 
+    default: "HireZen",
     template: "%s | HireZen",
   },
   description:
@@ -71,7 +74,10 @@ export default function RootLayout({ children }) {
     >
       <body
         className="min-h-full flex flex-col">
+        <PublicNavbar />
+        <LoginSignupButton />
         {children}
+        <PublicFooter/>
       </body>
     </html>
   );
