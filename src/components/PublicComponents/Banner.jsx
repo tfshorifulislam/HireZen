@@ -25,7 +25,7 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div className="relative flex justify-center items-center order-1 md:order-2 w-full max-w-md sm:max-w-lg md:max-w-none mx-auto">
+            <div className="relative flex justify-center items-center order-1 md:order-2 w-11/12 max-w-md sm:max-w-lg md:max-w-none mx-auto">
                 {/* Decorative background shapes mimicking the image context */}
                 <div className="absolute inset-0 bg-[#f2faff] rounded-full filter blur-2xl opacity-70 -z-10 scale-95" />
 
