@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Button, Link } from "@heroui/react";
+import { redirect } from "next/navigation";
+import { signUp } from "@/lib/auth-client";
 
 export default function SignupPage() {
     const [firstName, setFirstName] = useState("");
@@ -46,7 +48,6 @@ export default function SignupPage() {
                 password,
                 name: `${firstName} ${lastName}`.trim(),
                 role,
-                callbackURL: "/",
             });
 
             if (authError) {
@@ -58,6 +59,7 @@ export default function SignupPage() {
                 setEmail("");
                 setConfirmEmail("");
                 setPassword("");
+                // redirect('/')
             }
         } catch (err) {
             setError(`${err}`);
