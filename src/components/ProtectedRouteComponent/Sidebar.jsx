@@ -2,15 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-    ArrowRightFromSquare,
-    Bell,
-    Envelope,
-    Gear,
-    House,
-    Magnifier,
-    Person,
-} from "@gravity-ui/icons";
+import { ArrowRightFromSquare, Bell, Envelope, Gear, House, Magnifier, Person,} from "@gravity-ui/icons";
 import { useSession } from "@/lib/auth-client";
 import { Avatar, Dropdown, Label } from "@heroui/react";
 
