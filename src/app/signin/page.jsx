@@ -39,7 +39,6 @@ export default function SignInPage() {
                 setError(authError.message || "Invalid email or password.");
             } else {
                 setSuccess("Successfully signed in! Welcome back.");
-                // You can redirect here if needed
                 toast.success('Successfully signed in! Welcome back.')
             }
         } catch (err) {

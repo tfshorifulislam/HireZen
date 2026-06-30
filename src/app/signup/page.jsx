@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Button, Link } from "@heroui/react";
-import { redirect } from "next/navigation";
 import { signUp } from "@/lib/auth-client";
+import { redirect, useRouter } from "next/navigation";
 
 export default function SignupPage() {
     const [firstName, setFirstName] = useState("");
@@ -17,6 +17,8 @@ export default function SignupPage() {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
+
+    const router = useRouter()
 
     const toggleVisibility = () => setIsVisible(!isVisible);
 
@@ -59,7 +61,7 @@ export default function SignupPage() {
                 setEmail("");
                 setConfirmEmail("");
                 setPassword("");
-                // redirect('/')
+                router.push('/')
             }
         } catch (err) {
             setError(`${err}`);
