@@ -8,10 +8,10 @@ import { Avatar, Dropdown, Label } from "@heroui/react";
 
 const navItems = [
     { icon: House, label: "Home", href: "/dashboard" },
+    { icon: Person, label: "Profile", href: "/dashboard/profile" },
     { icon: Magnifier, label: "Search", href: "/dashboard/search" },
     { icon: Bell, label: "Notifications", href: "/dashboard/notifications" },
     { icon: Envelope, label: "Messages", href: "/dashboard/messages" },
-    { icon: Person, label: "Profile", href: "/dashboard/profile" },
     { icon: Gear, label: "Settings", href: "/dashboard/settings" },
 ];
 
@@ -62,7 +62,7 @@ export default function Sidebar() {
                                 : "text-gray-600 hover:bg-[#004f6e] hover:text-white"
                                 }`}                        >
                             <Icon className="w-5 h-5" />
-                            <span className="font-medium">{label}</span>
+                            <span>{label}</span>
                         </Link>
                     ))}
                 </nav>
