@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button, Link } from "@heroui/react";
 import { signUp } from "@/lib/auth-client";
 import { redirect, useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 export default function SignupPage() {
     const [firstName, setFirstName] = useState("");
@@ -62,6 +63,7 @@ export default function SignupPage() {
                 setConfirmEmail("");
                 setPassword("");
                 router.push('/')
+                toast('Account created successfully! Welcome.')
             }
         } catch (err) {
             setError(`${err}`);

@@ -4,7 +4,6 @@ import { SearchField } from "@heroui/react";
 import Link from 'next/link';
 import { useSession } from '@/lib/auth-client';
 import AvatarComponent from './Avatar';
-import { Menu } from 'lucide-react';
 import NavbarSkeleton from './NavbarSkeleton';
 
 const PublicNavbar = () => {
@@ -19,8 +18,6 @@ const PublicNavbar = () => {
     return (
         <nav className='w-11/12 mx-auto py-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center'>
             <div className='flex justify-between items-center w-full'>
-                <Menu className='md:hidden' />
-
                 <Link href='/'
                     className='flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 text-center sm:text-left justify-center sm:justify-start'>
                     <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl text-[#004f6e] tracking-tight'>
@@ -30,7 +27,6 @@ const PublicNavbar = () => {
                         FIND YOUR DREAM JOB
                     </p>
                 </Link>
-
                 {
                     user && <AvatarComponent />
                 }
@@ -55,5 +51,4 @@ const PublicNavbar = () => {
         </nav>
     );
 };
-
 export default PublicNavbar;

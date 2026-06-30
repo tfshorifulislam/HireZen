@@ -41,13 +41,13 @@ const AvatarComponent = () => {
                                 alt={user?.name}
                                 src={user?.image}
                             />
-                            <Avatar.Fallback delayMs={600}>
+                            <Avatar.Fallback delayMs={300}>
                                 {user?.name?.charAt(0).toUpperCase()}
                             </Avatar.Fallback>
                         </Avatar>
-                        <div className="flex flex-col gap-0">
-                            <p className="text-sm leading-5 font-medium">{user?.name}</p>
-                            <p className="text-xs leading-none text-muted">{user?.email}</p>
+                        <div className="flex flex-col min-w-0 flex-1 ">
+                            <p className="text-sm leading-5 font-medium truncate">{user?.name}</p>
+                            <p className="text-xs leading-none text-muted truncate">{user?.email}</p>
                         </div>
                     </div>
                 </div>
