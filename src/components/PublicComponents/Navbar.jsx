@@ -26,7 +26,7 @@ const PublicNavbar = () => {
                     <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl text-[#004f6e] tracking-tight'>
                         Hire<span className='text-[#ff5429]'>Zen</span>
                     </h1>
-                    <p className='text-xs sm:text-sm text-gray-500 font-medium tracking-wider whitespace-nowrap'>
+                    <p className='hidden md:flex text-xs sm:text-sm text-gray-500 font-medium tracking-wider whitespace-nowrap'>
                         FIND YOUR DREAM JOB
                     </p>
                 </Link>

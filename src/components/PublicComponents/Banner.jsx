@@ -18,7 +18,7 @@ const Banner = () => {
 
                 <div className="pt-2">
                     <Button
-                        className="bg-[#ff5429] text-white font-bold px-16 py-6 text-base sm:text-lg rounded-md  sm:w-auto hover:bg-[#e04822] shadow-md "
+                        className="bg-[#ff5429] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-md  sm:w-auto hover:bg-[#e04822] shadow-md "
                     >
                         Find Your Next WFH Job!
                     </Button>
