@@ -2,6 +2,7 @@
 import { signOut, useSession } from "@/lib/auth-client";
 import { ArrowRightFromSquare, Gear, Persons } from "@gravity-ui/icons";
 import { Avatar, Dropdown, Label } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const AvatarComponent = () => {
@@ -52,9 +53,13 @@ const AvatarComponent = () => {
                     </div>
                 </div>
                 <Dropdown.Menu>
+
                     <Dropdown.Item id="dashboard" textValue="Dashboard">
-                        <Label>Dashboard</Label>
+                        <Link href={'/dashboard'}>
+                            <Label>Dashboard</Label>
+                        </Link>
                     </Dropdown.Item>
+
                     <Dropdown.Item id="profile" textValue="Profile">
                         <Label>Profile</Label>
                     </Dropdown.Item>

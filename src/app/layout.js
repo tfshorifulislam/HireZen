@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PublicNavbar from "@/components/PublicComponents/Navbar";
-import LoginSignupButton from "@/components/PublicComponents/LoginSignupButton";
 import PublicFooter from "@/components/PublicComponents/Footer";
 import { ToastContainer } from "react-toastify";
 
@@ -31,7 +30,7 @@ export const metadata = {
     "tech jobs",
     "remote jobs",
   ],
-  authors: [{ name: "HireZen Team" }],
+  authors: [{ name: "HireZen Team || Tf Shoriul Islam", }],
   creator: "HireZen",
   metadataBase: new URL("https://your-domain.com"),
 
@@ -76,7 +75,6 @@ export default function RootLayout({ children }) {
       <body
         className="min-h-full flex flex-col">
         <PublicNavbar />
-        <LoginSignupButton />
         {children}
         <PublicFooter/>
          <ToastContainer />
