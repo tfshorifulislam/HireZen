@@ -3,12 +3,17 @@ import { useSession } from '@/lib/auth-client';
 import { Button, SearchField } from '@heroui/react';
 import Link from 'next/link';
 import React from 'react';
+import { LoadingSpinner } from './LoadingSpinner';
 
 const LoginSignupButton = () => {
 
     const { data: session, isPending } = useSession()
     const user = session?.user
     console.log(user)
+
+    if (isPending) {
+        return <LoadingSpinner/>
+    }
 
     return (
         <div className=' bg-[#004f6e] w-full px-4 py-3 md:py-2 flex flex-col gap-4 md:flex-row md:justify-between md:items-center sm:mt-3'>
