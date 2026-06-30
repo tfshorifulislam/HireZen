@@ -1,4 +1,9 @@
+import { useSession } from "@/lib/auth-client";
+
 const NavbarSkeleton = () => {
+    const { data: session, isPending } = useSession()
+    const user = session?.user
+
     return (
         <nav className="w-11/12 mx-auto py-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center animate-pulse">
 
@@ -15,7 +20,7 @@ const NavbarSkeleton = () => {
                 </div>
 
                 {/* Avatar */}
-                <div className="w-10 h-10 rounded-full bg-gray-200" />
+                {user && <div className="w-10 h-10 rounded-full bg-gray-200" />}
             </div>
 
             {/* Search */}

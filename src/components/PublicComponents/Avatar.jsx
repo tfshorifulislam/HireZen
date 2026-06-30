@@ -1,11 +1,23 @@
 'use client'
-import { useSession } from "@/lib/auth-client";
+import { signOut, useSession } from "@/lib/auth-client";
 import { ArrowRightFromSquare, Gear, Persons } from "@gravity-ui/icons";
 import { Avatar, Dropdown, Label } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
 const AvatarComponent = () => {
+
+    const router = useRouter()
+
     const { data: session, isPending } = useSession()
-    const user = session?.user
+    const user = session?.user;
+
+    const handleSignOut = async () => {
+        await signOut();
+        router.refresh();
+        router.push('/')
+    };
+
+
     return (
         <Dropdown>
             <Dropdown.Trigger className="rounded-full">
@@ -59,7 +71,9 @@ const AvatarComponent = () => {
                         </div>
                     </Dropdown.Item>
                     <Dropdown.Item id="logout" textValue="Logout" variant="danger">
-                        <div className="flex w-full items-center justify-between gap-2">
+                        <div
+                            onClick={handleSignOut}
+                            className="flex w-full items-center justify-between gap-2">
                             <Label>Log Out</Label>
                             <ArrowRightFromSquare className="size-3.5 text-danger" />
                         </div>

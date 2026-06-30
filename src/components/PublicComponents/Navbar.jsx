@@ -31,7 +31,9 @@ const PublicNavbar = () => {
                     </p>
                 </Link>
 
-                <AvatarComponent />
+                {
+                    user && <AvatarComponent />
+                }
             </div>
 
 
