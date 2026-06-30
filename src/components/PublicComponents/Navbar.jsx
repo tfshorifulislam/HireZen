@@ -5,11 +5,16 @@ import Link from 'next/link';
 import { useSession } from '@/lib/auth-client';
 import AvatarComponent from './Avatar';
 import { Menu } from 'lucide-react';
+import NavbarSkeleton from './NavbarSkeleton';
 
 const PublicNavbar = () => {
     const { data: session, isPending } = useSession()
     const user = session?.user
-    console.log(user)
+    // console.log(user)
+
+    if(isPending){
+        return <NavbarSkeleton/>
+    }
 
     return (
         <nav className='w-11/12 mx-auto py-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center'>

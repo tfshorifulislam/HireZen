@@ -30,8 +30,8 @@ const Banner = () => {
                 <div className="absolute inset-0 bg-[#f2faff] rounded-full filter blur-2xl opacity-70 -z-10 scale-95" />
 
                 <Image
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     src="/banner.jpg"
                     alt="Woman working comfortably from home on her laptop with a coffee mug"
                     className="w-full h-auto object-contain dynamic-image-glow"

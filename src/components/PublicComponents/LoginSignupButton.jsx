@@ -9,7 +9,7 @@ const LoginSignupButton = () => {
 
     const { data: session, isPending } = useSession()
     const user = session?.user
-    console.log(user)
+    // console.log(user)
 
     if (isPending) {
         return <LoadingSpinner/>
@@ -19,7 +19,7 @@ const LoginSignupButton = () => {
         <div className=' bg-[#004f6e] w-full px-4 py-3 md:py-2 flex flex-col gap-4 md:flex-row md:justify-between md:items-center sm:mt-3'>
 
 
-            <div className='flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm text-white/90 font-medium text-center md:justify-start'>
+            <div className='hidden md:flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs sm:text-sm text-white/90 font-medium text-center md:justify-start'>
                 <p className="cursor-pointer hover:text-white transition-colors">Find Remote Jobs</p>
                 <p className="cursor-pointer hover:text-white transition-colors">How HireZen Works</p>
                 <p className="cursor-pointer hover:text-white transition-colors">Career Advice</p>
