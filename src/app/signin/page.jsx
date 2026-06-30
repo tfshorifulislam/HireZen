@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { Button, Link } from "@heroui/react";
+import { signIn } from "@/lib/auth-client";
+import { toast } from "react-toastify";
 
 export default function SignInPage() {
     const [email, setEmail] = useState("");
@@ -16,8 +18,10 @@ export default function SignInPage() {
 
     const handleSignin = async (e) => {
         e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        const user = Object.fromEntries(formData.entries());
 
-        console.log("Sign In Attempt:", { email });
+        // console.log("Sign In Attempt:", { email });
 
         setError("");
         setSuccess("");
@@ -36,6 +40,7 @@ export default function SignInPage() {
             } else {
                 setSuccess("Successfully signed in! Welcome back.");
                 // You can redirect here if needed
+                toast.success('Successfully signed in! Welcome back.')
             }
         } catch (err) {
             setError(`${err}`);

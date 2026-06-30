@@ -3,6 +3,7 @@ import "./globals.css";
 import PublicNavbar from "@/components/PublicComponents/Navbar";
 import LoginSignupButton from "@/components/PublicComponents/LoginSignupButton";
 import PublicFooter from "@/components/PublicComponents/Footer";
+import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,6 +79,7 @@ export default function RootLayout({ children }) {
         <LoginSignupButton />
         {children}
         <PublicFooter/>
+         <ToastContainer />
       </body>
     </html>
   );
