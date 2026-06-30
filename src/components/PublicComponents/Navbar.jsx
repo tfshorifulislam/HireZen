@@ -15,7 +15,7 @@ const PublicNavbar = () => {
     }
 
     return (
-        <nav className='shadow-sm mb-5'>
+        <nav className='shadow-sm '>
             <div className='w-11/12 mx-auto py-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center'>
                 <div className='flex justify-between items-center w-full'>
                     <Link href='/'
@@ -31,8 +31,6 @@ const PublicNavbar = () => {
                         user && <AvatarComponent />
                     }
                 </div>
-
-
                 {
                     !user &&
                     <div className='w-full md:w-125 flex justify-center'>

@@ -28,7 +28,7 @@ export default function Sidebar() {
     };
 
     return (
-        <aside className="hidden lg:flex w-60 shrink-0 bg-white sticky top-0 h-screen shadow-sm rounded-sm">
+        <aside className="hidden lg:flex w-60 shrink-0 bg-slate-50 sticky top-0 h-screen shadow-sm rounded-sm">
             <div className="flex flex-col w-full p-5">
 
                 {/* user */}
