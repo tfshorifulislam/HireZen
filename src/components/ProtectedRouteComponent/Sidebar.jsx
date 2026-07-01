@@ -7,11 +7,11 @@ import { useSession } from "@/lib/auth-client";
 import { Avatar, Dropdown, Label } from "@heroui/react";
 
 const navItems = [
-    { icon: House, label: "Home", href: "/dashboard" },
-    { icon: Person, label: "Profile", href: "/dashboard/profile" },
-    { icon: Magnifier, label: "Search", href: "/dashboard/search" },
-    { icon: Bell, label: "Notifications", href: "/dashboard/notifications" },
-    { icon: Envelope, label: "Messages", href: "/dashboard/messages" },
+    { icon: House, label: "Dashboard", href: "/dashboard" },
+    { icon: Person, label: "Users", href: "/dashboard/users" },
+    { icon: Magnifier, label: "Companies", href: "/dashboard/companies" },
+    { icon: Bell, label: "Jobs", href: "/dashboard/jobs" },
+    { icon: Envelope, label: "Payments", href: "/dashboard/payments" },
     { icon: Gear, label: "Settings", href: "/dashboard/settings" },
 ];
 
