@@ -33,8 +33,8 @@ export default function BottomNavbar() {
               href={href}
               className={`flex flex-col items-center justify-center transition-colors ${
                 active
-                  ? "text-[#004f6e]"
-                  : "text-gray-500 hover:text-[#004f6e]"
+                  ? "text-[#060b30]"
+                  : "text-gray-500 hover:text-[#060b30]"
               }`}
             >
               <Icon className="w-5 h-5" />
@@ -44,7 +44,7 @@ export default function BottomNavbar() {
               </span>
 
               {active && (
-                <span className="absolute bottom-0 h-1 w-10 rounded-full bg-[#ff5429]" />
+                <span className="absolute bottom-0 h-1 w-10 rounded-full bg-[#3881f5]" />
               )}
             </Link>
           );

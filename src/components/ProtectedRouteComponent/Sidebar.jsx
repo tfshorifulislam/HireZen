@@ -58,8 +58,8 @@ export default function Sidebar() {
                             href={href}
                             className=
                             {`flex items-center gap-3 rounded-lg px-4 py-2 transition ${pathname === href
-                                ? "bg-[#004f6e] text-white"
-                                : "text-gray-600 hover:bg-[#004f6e] hover:text-white"
+                                ? "bg-[#060b30] text-white"
+                                : "text-gray-600 hover:bg-[#060b30] hover:text-white"
                                 }`}                        >
                             <Icon className="w-5 h-5" />
                             <span>{label}</span>

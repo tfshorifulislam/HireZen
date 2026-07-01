@@ -20,8 +20,8 @@ const PublicNavbar = () => {
                 <div className='flex justify-between items-center w-full'>
                     <Link href='/'
                         className='flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 text-center sm:text-left justify-center sm:justify-start'>
-                        <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl text-[#004f6e] tracking-tight'>
-                            Hire<span className='text-[#ff5429]'>Zen</span>
+                        <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl text-[#060b30] tracking-tight'>
+                            Hire<span className='text-[#3881f5]'>Zen</span>
                         </h1>
                         <p className='hidden md:flex text-xs sm:text-sm text-gray-500 font-medium tracking-wider whitespace-nowrap'>
                             FIND YOUR DREAM JOB
@@ -35,8 +35,8 @@ const PublicNavbar = () => {
                     !user &&
                     <div className='w-full md:w-125 flex justify-center'>
                         <SearchField name="search" className="w-full max-w-md md:max-w-125">
-                            <SearchField.Group className="bg-[#f2faff] rounded-md h-12 border border-[#004f6e] flex items-center px-3 w-full transition-shadow focus-within:ring-2 focus-within:ring-[#004f6e]/20">
-                                <SearchField.SearchIcon className="text-[#004f6e] shrink-0" />
+                            <SearchField.Group className="bg-[#f2faff] rounded-md h-12 border border-[#060b30] flex items-center px-3 w-full transition-shadow focus-within:ring-2 focus-within:ring-[#060b30]/20">
+                                <SearchField.SearchIcon className="text-[#060b30] shrink-0" />
                                 <SearchField.Input
                                     className="w-full bg-transparent pl-2 focus:outline-none text-sm"
                                     placeholder="Search jobs, companies..."

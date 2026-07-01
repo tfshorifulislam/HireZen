@@ -37,13 +37,13 @@ const JobSeekerBanner = () => {
                     <span className="relative inline-block px-1">
                         1 Million
 
-                        <svg className="absolute left-0 -bottom-2 w-full h-2 text-[#ff5429]" viewBox="0 0 100 10" preserveAspectRatio="none">
+                        <svg className="absolute left-0 -bottom-2 w-full h-2 text-[#3881f5]" viewBox="0 0 100 10" preserveAspectRatio="none">
                             <path d="M0,5 Q50,10 100,5" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round" />
                         </svg>
                     </span>{' '}
                     Job Seekers Have Used <span className="text-white">HireZen</span> to Find a Better Way to Work
                 </h2>
-                <button className="bg-[#ff5429] hover:bg-[#e0431b] text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-md shadow-md hover:shadow-lg active:scale-98 transition-all duration-200 cursor-pointer">
+                <button className="bg-[#3881f5]  text-white font-bold text-base md:text-lg px-8 py-3.5 rounded-md shadow-md hover:shadow-lg active:scale-98 transition-all duration-200 cursor-pointer">
                     Find Your Next Remote Job!
                 </button>
             </div>

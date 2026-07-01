@@ -109,7 +109,7 @@ export default function SignupPage() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="flex flex-col gap-1.5">
                                 <label className="text-sm font-semibold text-slate-700">
-                                    First Name <span className="text-red-500">*</span>
+                                    First Name <span className="text-[#3881f5]">*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -123,7 +123,7 @@ export default function SignupPage() {
 
                             <div className="flex flex-col gap-1.5">
                                 <label className="text-sm font-semibold text-slate-700">
-                                    Last Name <span className="text-red-500">*</span>
+                                    Last Name <span className="text-[#3881f5]">*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -139,7 +139,7 @@ export default function SignupPage() {
 
                         <div className="flex flex-col gap-1.5">
                             <label className="text-sm font-semibold text-slate-700">
-                                Email Address <span className="text-red-500">*</span>
+                                Email Address <span className="text-[#3881f5]">*</span>
                             </label>
                             <input
                                 type="email"
@@ -153,7 +153,7 @@ export default function SignupPage() {
 
                         <div className="flex flex-col gap-1.5">
                             <label className="text-sm font-semibold text-slate-700">
-                                Confirm Email <span className="text-red-500">*</span>
+                                Confirm Email <span className="text-[#3881f5]">*</span>
                             </label>
                             <input
                                 type="email"
@@ -167,7 +167,7 @@ export default function SignupPage() {
 
                         <div className="flex flex-col gap-1.5">
                             <label className="text-sm font-semibold text-slate-700">
-                                Password <span className="text-red-500">*</span>
+                                Password <span className="text-[#3881f5]">*</span>
                             </label>
                             <div className="relative">
                                 <input
@@ -190,7 +190,7 @@ export default function SignupPage() {
 
                         <div className="flex flex-col gap-3">
                             <label className="text-sm font-semibold text-slate-700">
-                                I want to join as <span className="text-red-500">*</span>
+                                I want to join as <span className="text-[#3881f5]">*</span>
                             </label>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -238,7 +238,7 @@ export default function SignupPage() {
                                 type="submit"
                                 isLoading={isLoading}
                                 isDisabled={isLoading}
-                                className="w-full py-7 bg-[#ff5722] hover:bg-[#e64a19] text-white font-bold text-lg rounded-2xl shadow-md transition duration-200"
+                                className="w-full py-7 bg-[#3881f5] text-white font-bold text-lg rounded-2xl shadow-md transition duration-200"
                             >
                                 Sign Up Today!
                             </Button>

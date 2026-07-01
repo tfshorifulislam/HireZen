@@ -67,9 +67,9 @@ const FeaturingJobs = () => {
         <section className="max-w-7xl w-11/12 mx-auto py-12 md:py-16 overflow-hidden">
             {/* Header */}
             <div className="text-center mb-10 md:mb-12">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#004f6e] tracking-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#060b30] tracking-tight">
                     Featuring{' '}
-                    <span className="border-b-4 border-[#ff5429] pb-1">
+                    <span className="border-b-4 border-[#3881f5] pb-1">
                         210k+
                     </span>{' '}
                     Flexible & Online Jobs
@@ -84,7 +84,7 @@ const FeaturingJobs = () => {
                     onClick={prevSlide}
                     className="hidden md:flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 hover:bg-gray-50 active:scale-95 transition cursor-pointer flex-shrink-0 z-10"
                 >
-                    <ChevronLeft className="w-5 h-5 text-[#004f6e]" />
+                    <ChevronLeft className="w-5 h-5 text-[#060b30]" />
                 </button>
 
                 {/* Animated Viewport */}
@@ -111,20 +111,20 @@ const FeaturingJobs = () => {
                                     {/* Top Metadata */}
                                     <div className="flex justify-between items-center">
                                         <span className="text-xs text-gray-400 font-medium">Today</span>
-                                        <span className="text-xs text-[#ff5429] font-bold uppercase tracking-wider">New!</span>
+                                        <span className="text-xs text-[#3881f5] font-bold uppercase tracking-wider">New!</span>
                                     </div>
 
                                     {/* Job Title */}
-                                    <h3 className="text-base md:text-lg font-bold text-[#004f6e] line-clamp-2 leading-snug">
+                                    <h3 className="text-base md:text-lg font-bold text-[#060b30] line-clamp-2 leading-snug">
                                         {job.title}
                                     </h3>
 
                                     {/* Badges */}
                                     <div className="flex flex-wrap gap-2">
-                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#004f6e] rounded-full font-medium">
+                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#060b30] rounded-full font-medium">
                                             {job.type}
                                         </span>
-                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#004f6e] rounded-full font-medium">
+                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#060b30] rounded-full font-medium">
                                             {job.time}
                                         </span>
                                     </div>
@@ -145,7 +145,7 @@ const FeaturingJobs = () => {
                     onClick={nextSlide}
                     className="hidden md:flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 hover:bg-gray-50 active:scale-95 transition cursor-pointer flex-shrink-0 z-10"
                 >
-                    <ChevronRight className="w-5 h-5 text-[#004f6e]" />
+                    <ChevronRight className="w-5 h-5 text-[#060b30]" />
                 </button>
             </div>
 
@@ -155,14 +155,14 @@ const FeaturingJobs = () => {
                     onClick={prevSlide}
                     className="flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 active:bg-gray-100"
                 >
-                    <ChevronLeft className="w-5 h-5 text-[#004f6e]" />
+                    <ChevronLeft className="w-5 h-5 text-[#060b30]" />
                 </button>
 
                 <button
                     onClick={nextSlide}
                     className="flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 active:bg-gray-100"
                 >
-                    <ChevronRight className="w-5 h-5 text-[#004f6e]" />
+                    <ChevronRight className="w-5 h-5 text-[#060b30]" />
                 </button>
             </div>
 
@@ -176,7 +176,7 @@ const FeaturingJobs = () => {
                             setPage(index);
                         }}
                         className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${page === index
-                                ? 'w-8 bg-[#ff5429]'
+                                ? 'w-8 bg-[#3881f5]'
                                 : 'w-2 bg-gray-300 hover:bg-gray-400'
                             }`}
                     />

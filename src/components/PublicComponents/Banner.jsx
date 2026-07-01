@@ -8,8 +8,8 @@ const Banner = () => {
 
 
             <div className="flex flex-col space-y-4 md:space-y-6 text-center md:text-left order-2 md:order-1 sm:w-11/12">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#004f6e] leading-tight max-w-xl mx-auto md:mx-0">
-                    The <span className="text-[#ff5429]">#1 Job Site</span> to Find Work From Home Jobs. No Ads, Scams, or Junk
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#060b30] leading-tight max-w-xl mx-auto md:mx-0">
+                    <span className="text-[#3881f5]">Fine Your</span> Dream Job. Here Easy and Fast, No Ads, Scams, or Junk
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-xl text-gray-600 font-normal max-w-lg mx-auto md:mx-0">
@@ -18,7 +18,7 @@ const Banner = () => {
 
                 <div className="pt-2">
                     <Button
-                        className="bg-[#ff5429] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-md  sm:w-auto hover:bg-[#e04822] shadow-md "
+                        className="bg-[#3881f5] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-md  sm:w-auto  shadow-md "
                     >
                         Find Your Next WFH Job!
                     </Button>

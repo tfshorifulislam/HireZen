@@ -47,8 +47,8 @@ const PublicFooter = () => {
 
           {/* Brand */}
           <div>
-            <h2 className="text-3xl font-bold text-[#004f6e]">
-              Hire<span className="text-[#ff5429]">Zen</span>
+            <h2 className="text-3xl font-bold text-[#060b30]">
+              Hire<span className="text-[#3881f5]">Zen</span>
             </h2>
 
             <p className="mt-4 text-gray-600 leading-7 text-sm">
@@ -62,7 +62,7 @@ const PublicFooter = () => {
                   <Link
                     key={index}
                     href="#"
-                    className="h-10 w-10 rounded-full border flex items-center justify-center text-gray-500 hover:bg-[#004f6e] hover:text-white hover:border-[#004f6e] duration-300"
+                    className="h-10 w-10 rounded-full border flex items-center justify-center text-gray-500 hover:bg-[#060b30] hover:text-white hover:border-[#060b30] duration-300"
                   >
                     <Icon size={16} />
                   </Link>
@@ -73,7 +73,7 @@ const PublicFooter = () => {
 
           {/* Column 1 */}
           <div>
-            <h3 className="font-semibold text-lg text-[#004f6e] mb-5">
+            <h3 className="font-semibold text-lg text-[#060b30] mb-5">
               Remote Jobs
             </h3>
 
@@ -82,7 +82,7 @@ const PublicFooter = () => {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="text-gray-600 text-sm hover:text-[#ff5429] transition-all hover:translate-x-1 inline-block duration-300"
+                    className="text-gray-600 text-sm hover:text-[#3881f5] transition-all hover:translate-x-1 inline-block duration-300"
                   >
                     {item}
                   </Link>
@@ -93,7 +93,7 @@ const PublicFooter = () => {
 
           {/* Column 2 */}
           <div>
-            <h3 className="font-semibold text-lg text-[#004f6e] mb-5">
+            <h3 className="font-semibold text-lg text-[#060b30] mb-5">
               Company
             </h3>
 
@@ -102,7 +102,7 @@ const PublicFooter = () => {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="text-gray-600 text-sm hover:text-[#ff5429] transition-all hover:translate-x-1 inline-block duration-300"
+                    className="text-gray-600 text-sm hover:text-[#3881f5] transition-all hover:translate-x-1 inline-block duration-300"
                   >
                     {item}
                   </Link>
@@ -113,7 +113,7 @@ const PublicFooter = () => {
 
           {/* Column 3 */}
           <div>
-            <h3 className="font-semibold text-lg text-[#004f6e] mb-5">
+            <h3 className="font-semibold text-lg text-[#060b30] mb-5">
               Resources
             </h3>
 
@@ -122,7 +122,7 @@ const PublicFooter = () => {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="text-gray-600 text-sm hover:text-[#ff5429] transition-all hover:translate-x-1 inline-block duration-300"
+                    className="text-gray-600 text-sm hover:text-[#3881f5] transition-all hover:translate-x-1 inline-block duration-300"
                   >
                     {item}
                   </Link>
@@ -142,28 +142,28 @@ const PublicFooter = () => {
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <Link
               href="#"
-              className="text-gray-500 hover:text-[#ff5429] duration-300"
+              className="text-gray-500 hover:text-[#3881f5] duration-300"
             >
               Privacy Policy
             </Link>
 
             <Link
               href="#"
-              className="text-gray-500 hover:text-[#ff5429] duration-300"
+              className="text-gray-500 hover:text-[#3881f5] duration-300"
             >
               Terms of Service
             </Link>
 
             <Link
               href="#"
-              className="text-gray-500 hover:text-[#ff5429] duration-300"
+              className="text-gray-500 hover:text-[#3881f5] duration-300"
             >
               Cookies
             </Link>
 
             <Link
               href="#"
-              className="text-gray-500 hover:text-[#ff5429] duration-300"
+              className="text-gray-500 hover:text-[#3881f5] duration-300"
             >
               Sitemap
             </Link>
