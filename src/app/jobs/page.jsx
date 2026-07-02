@@ -12,6 +12,7 @@ import {
     DollarSign,
     Building2,
 } from "lucide-react";
+import Image from "next/image";
 
 const jobs = [
     {
@@ -256,11 +257,16 @@ const JobPage = () => {
 
                             <div className="flex items-center gap-4">
 
-                                <img
-                                    src={job.logo}
-                                    className="w-14 h-14 rounded-xl"
-                                    alt=""
-                                />
+                                <div className="relative h-14 w-14 flex-shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white">
+                                    <Image
+                                        src={job.logo}
+                                        alt={`${job.company} logo`}
+                                        fill
+                                        sizes="56px"
+                                        className="object-cover"
+                                        priority={false}
+                                    />
+                                </div>
 
                                 <div>
 
