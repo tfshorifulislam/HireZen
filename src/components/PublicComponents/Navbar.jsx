@@ -27,6 +27,7 @@ const PublicNavbar = () => {
                             FIND YOUR DREAM JOB
                         </p>
                     </Link>
+
                     {
                         user && <AvatarComponent />
                     }
