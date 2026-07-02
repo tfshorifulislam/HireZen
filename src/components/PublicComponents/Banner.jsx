@@ -8,7 +8,7 @@ const Banner = () => {
 
 
             <div className="flex flex-col space-y-4 md:space-y-6 text-center md:text-left order-2 md:order-1 sm:w-11/12">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#060b30] leading-tight max-w-xl mx-auto md:mx-0">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#293681] leading-tight max-w-xl mx-auto md:mx-0">
                     <span className="text-[#3881f5]">Fine Your</span> Dream Job. Here Easy and Fast, No Ads, Scams, or Junk
                 </h1>
 

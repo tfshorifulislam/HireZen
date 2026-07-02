@@ -2,7 +2,7 @@ import React from 'react';
 
 const JobSeekerBanner = () => {
     return (
-        <section className="w-full bg-[#008cb4] relative overflow-hidden py-16 md:py-20 text-white text-center px-4">
+        <section className="w-full bg-[#293681] relative overflow-hidden py-16 md:py-20 text-white text-center px-4">
             {/* Background SVG Doodle Pattern to match image_a689b6.png */}
             <div className="absolute inset-0 opacity-10 pointer-events-none select-none">
                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">

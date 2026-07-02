@@ -47,7 +47,7 @@ const PublicFooter = () => {
 
           {/* Brand */}
           <div>
-            <h2 className="text-3xl font-bold text-[#060b30]">
+            <h2 className="text-3xl font-bold text-[#293681]">
               Hire<span className="text-[#3881f5]">Zen</span>
             </h2>
 
@@ -62,7 +62,7 @@ const PublicFooter = () => {
                   <Link
                     key={index}
                     href="#"
-                    className="h-10 w-10 rounded-full border flex items-center justify-center text-gray-500 hover:bg-[#060b30] hover:text-white hover:border-[#060b30] duration-300"
+                    className="h-10 w-10 rounded-full border flex items-center justify-center text-gray-500 hover:bg-[#293681] hover:text-white hover:border-[#293681] duration-300"
                   >
                     <Icon size={16} />
                   </Link>
@@ -73,7 +73,7 @@ const PublicFooter = () => {
 
           {/* Column 1 */}
           <div>
-            <h3 className="font-semibold text-lg text-[#060b30] mb-5">
+            <h3 className="font-semibold text-lg text-[#293681] mb-5">
               Remote Jobs
             </h3>
 
@@ -93,7 +93,7 @@ const PublicFooter = () => {
 
           {/* Column 2 */}
           <div>
-            <h3 className="font-semibold text-lg text-[#060b30] mb-5">
+            <h3 className="font-semibold text-lg text-[#293681] mb-5">
               Company
             </h3>
 
@@ -113,7 +113,7 @@ const PublicFooter = () => {
 
           {/* Column 3 */}
           <div>
-            <h3 className="font-semibold text-lg text-[#060b30] mb-5">
+            <h3 className="font-semibold text-lg text-[#293681] mb-5">
               Resources
             </h3>
 

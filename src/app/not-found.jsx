@@ -17,7 +17,7 @@ const NotFoundPage = () => {
 
             <Link
                 href="/"
-                className="mt-6 px-6 py-3 bg-[#060b30] text-white rounded-lg hover:bg-[#060b30]transition"
+                className="mt-6 px-6 py-3 bg-[#293681] text-white rounded-lg hover:bg-[#293681]transition"
             >
                 Go Back Home
             </Link>

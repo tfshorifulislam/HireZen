@@ -67,7 +67,7 @@ const FeaturingJobs = () => {
         <section className="max-w-7xl w-11/12 mx-auto py-12 md:py-16 overflow-hidden">
             {/* Header */}
             <div className="text-center mb-10 md:mb-12">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#060b30] tracking-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#293681] tracking-tight">
                     Featuring{' '}
                     <span className="border-b-4 border-[#3881f5] pb-1">
                         210k+
@@ -84,7 +84,7 @@ const FeaturingJobs = () => {
                     onClick={prevSlide}
                     className="hidden md:flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 hover:bg-gray-50 active:scale-95 transition cursor-pointer flex-shrink-0 z-10"
                 >
-                    <ChevronLeft className="w-5 h-5 text-[#060b30]" />
+                    <ChevronLeft className="w-5 h-5 text-[#293681]" />
                 </button>
 
                 {/* Animated Viewport */}
@@ -115,16 +115,16 @@ const FeaturingJobs = () => {
                                     </div>
 
                                     {/* Job Title */}
-                                    <h3 className="text-base md:text-lg font-bold text-[#060b30] line-clamp-2 leading-snug">
+                                    <h3 className="text-base md:text-lg font-bold text-[#293681] line-clamp-2 leading-snug">
                                         {job.title}
                                     </h3>
 
                                     {/* Badges */}
                                     <div className="flex flex-wrap gap-2">
-                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#060b30] rounded-full font-medium">
+                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#293681] rounded-full font-medium">
                                             {job.type}
                                         </span>
-                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#060b30] rounded-full font-medium">
+                                        <span className="text-xs px-3 py-1 bg-[#f2faff] text-[#293681] rounded-full font-medium">
                                             {job.time}
                                         </span>
                                     </div>
@@ -145,7 +145,7 @@ const FeaturingJobs = () => {
                     onClick={nextSlide}
                     className="hidden md:flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 hover:bg-gray-50 active:scale-95 transition cursor-pointer flex-shrink-0 z-10"
                 >
-                    <ChevronRight className="w-5 h-5 text-[#060b30]" />
+                    <ChevronRight className="w-5 h-5 text-[#293681]" />
                 </button>
             </div>
 
@@ -155,14 +155,14 @@ const FeaturingJobs = () => {
                     onClick={prevSlide}
                     className="flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 active:bg-gray-100"
                 >
-                    <ChevronLeft className="w-5 h-5 text-[#060b30]" />
+                    <ChevronLeft className="w-5 h-5 text-[#293681]" />
                 </button>
 
                 <button
                     onClick={nextSlide}
                     className="flex items-center justify-center w-11 h-11 rounded-full border border-gray-200 active:bg-gray-100"
                 >
-                    <ChevronRight className="w-5 h-5 text-[#060b30]" />
+                    <ChevronRight className="w-5 h-5 text-[#293681]" />
                 </button>
             </div>
 
